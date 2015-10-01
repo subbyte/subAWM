@@ -2,7 +2,7 @@
 Awesome Window Manager Configuration
 
 Features:
-- widgets (CPU temp, SSD read/write status, WiFi signal, Volume, Battery, Weather, Time/Date)
+- widgets (CPU temp, SSD read/write status, WiFi signal, Volume, Battery, Weather, Floating calendar)
 - floating console (toggle with Mod4 + ~)
 
 Other programs I use:
