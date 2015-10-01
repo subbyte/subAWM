@@ -3,7 +3,7 @@ Awesome Window Manager Configuration
 
 Features:
 - widgets
-- float console (toggle with Mod4 + ~)
+- floating console (toggle with Mod4 + ~)
 
 Other programs I use:
 - fish
@@ -12,6 +12,8 @@ Other programs I use:
 - firefox w/ vimperator
 - chromium w/ vimium
 
-Screenshots:
+Screenshot (busy workspace):
 ![alt tag](https://raw.githubusercontent.com/subbyte/subAWM/master/screenshots/screenshot-busy.png)
+
+Screenshot (floating console):
 ![alt tag](https://raw.githubusercontent.com/subbyte/subAWM/master/screenshots/screenshot-console.png)
