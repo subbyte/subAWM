@@ -293,7 +293,7 @@ globalkeys = awful.util.table.join(
         end),
 
     -- Screen Lock
-    awful.key({ }, "XF86Launch1",
+    awful.key({ }, "XF86ScreenSaver",
         function ()
             awful.util.spawn("dm-tool lock")
         end),
@@ -301,7 +301,7 @@ globalkeys = awful.util.table.join(
     -- Extended Screen
     awful.key({ }, "XF86Display",
         function ()
-            awful.util.spawn("xrandr --output LVDS1 --auto --output `xrandr | awk '$2==\"connected\" {print $1}' | grep -v LVDS1` --auto --right-of LVDS1")
+            awful.util.spawn("~/.config/awesome/xrandr.sh")
         end),
 
     -- Volume Control
