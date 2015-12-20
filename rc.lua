@@ -299,7 +299,7 @@ globalkeys = awful.util.table.join(
         end),
 
     -- Extended Screen
-    awful.key({ }, "XF86Display",
+    awful.key({ }, "F12",
         function ()
             awful.util.spawn("~/.config/awesome/xrandr.sh")
         end),
