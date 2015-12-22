@@ -496,4 +496,7 @@ awful.util.spawn("xset -dpms")
 -- unified clipboard
 awful.util.spawn("autocutsel -fork")
 awful.util.spawn("autocutsel -selection PRIMARY -fork")
+
+-- automount usb drives
+awful.util.spawn("udiskie")
 -- }}}
