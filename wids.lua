@@ -32,5 +32,6 @@ diowidget = wibox.widget.textbox("")
 vicious.register(diowidget, vicious.widgets.dio, " SSD ${sda read_mb} / ${sda write_mb}MB ", 2)
 
 -- WiFi
+-- pacman -S wireless_tools
 wifiwidget = wibox.widget.textbox("")
 vicious.register(wifiwidget, vicious.widgets.wifi, " WiFi ${linp}% ", 4, "wlp3s0")
