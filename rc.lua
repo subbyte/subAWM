@@ -295,7 +295,8 @@ globalkeys = awful.util.table.join(
     -- Screen Lock
     awful.key({ }, "XF86ScreenSaver",
         function ()
-            awful.util.spawn("dm-tool lock")
+            --awful.util.spawn("dm-tool lock")
+            awful.util.spawn("i3lock -c 000000 -n")
         end),
 
     -- Extended Screen
