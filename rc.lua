@@ -491,8 +491,7 @@ console.init(terminal)
 -- {{{ Autorun program
 -- display settings
 awful.util.spawn("xbacklight -set 75")
-awful.util.spawn("xset s off")
-awful.util.spawn("xset -dpms")
+awful.util.spawn("xset s off -dpms")
 
 -- unified clipboard
 awful.util.spawn("autocutsel -fork")
