@@ -404,7 +404,7 @@ awful.rules.rules = {
                      size_hints_honor = false } },
     { rule = { class = "MPlayer" },
       properties = { floating = true } },
-    { rule = { instance = "plugin-container" },
+    { rule = { class = "Luakit" },
       properties = { floating = true } },
     { rule = { class = "pinentry" },
       properties = { floating = true } },
