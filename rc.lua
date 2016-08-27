@@ -205,7 +205,7 @@ for s = 1, screen.count() do
     right_layout:add(wids.wifiwidget)
     right_layout:add(wids.volwidget)
     right_layout:add(wids.batwidget)
-    right_layout:add(wids.weatwidget)
+    --right_layout:add(wids.weatwidget)
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
 
