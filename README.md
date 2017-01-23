@@ -10,7 +10,6 @@ Awesome Versions:
 - v3.5.9
 
 Other programs I use:
-- fish
 - gvim
 - zathura
 - firefox w/ vimperator
