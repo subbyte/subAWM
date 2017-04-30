@@ -3,12 +3,12 @@ Awesome Window Manager Configuration
 
 Features:
 - widgets (CPU temp, SSD I/O, WiFi signal, Volume, Battery)
-- floating console (toggle with Mod4 + ~)
 - volume control (Thinkpad media buttons)
 - screensaver (i3lock)
-- monitor/projector recognition and auto setup (xrandr.sh)
+- monitor/projector recognition and auto setup (xrandr.lua)
 - display brightness setup at startup (xbacklight, xset)
 - auto mount setup at startup (udiskie)
+- floating console (toggle with Mod4 + ~, only in v3.5.9)
 
 Awesome Versions:
 - v4.0
@@ -18,7 +18,7 @@ Other programs I use:
 - urxvt (conf: https://github.com/subbyte/configurations/tree/master/urxvt)
 - gvim (conf: https://github.com/subbyte/configurations/tree/master/vim)
 - zathura
-- firefox w/ vimperator (conf: https://github.com/subbyte/configurations/tree/master/vimperator)
+- firefox w/ vimFx
 - chromium w/ vimium
 - i3lock
 
