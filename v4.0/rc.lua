@@ -11,11 +11,11 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
 
--- My widget lib
-require("wids")
+-- xrandr module for second monitor
+local xrandr = require("xrandr")
 
--- cc console
-require("console")
+-- My widget lib
+local wids = require("wids")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -348,10 +348,12 @@ globalkeys = awful.util.table.join(
         end),
 
     -- Extended Screen
-    awful.key({ }, "F12",
-        function ()
-            awful.spawn("~/.config/awesome/xrandr.sh")
-        end),
+    awful.key({ }, "F12", function() xrandr.xrandr() end),
+
+    --awful.key({ }, "F12",
+        --function ()
+            --awful.spawn("~/.config/awesome/xrandr.sh")
+        --end),
 
     -- Volume Control
     awful.key({ }, "XF86AudioRaiseVolume",
@@ -365,10 +367,7 @@ globalkeys = awful.util.table.join(
     awful.key({ }, "XF86AudioMute",
         function ()
             awful.spawn("amixer set Master toggle")
-        end),
-
-    -- cc console
-    awful.key({ modkey, }, "`", function () console.toggle() end)
+        end)
 )
 
 clientkeys = awful.util.table.join(
@@ -586,10 +585,6 @@ end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
--- }}}
-
--- {{{ cc console
-console.init(terminal)
 -- }}}
 
 -- {{{ Autorun program
